@@ -5,5 +5,5 @@ st.set_page_config(layout="wide", page_title="Elecciones 🇨🇴 2023 🗳️ B
 st.title('Elecciones Colombia 2023 🇨🇴')
 st.header("Tecnología para Ganar by Novus Vote 🗳️")
 
-st.write("Mira nuestros casos de usos:")
+st.write("👀 Mira nuestros casos de usos por territorios 👈")
 
