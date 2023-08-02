@@ -17,6 +17,7 @@ if upload_file is not None:
     # Read the file to a dataframe using pandas
     df = pd.read_csv(upload_file)
     tables = camelot.read_pdf(upload_file)
+    st.write("Total tables extracted:", tables.n)
     st.write(tables)
     # Create a section for the dataframe statistics
     st.header('Statistics of Dataframe')
