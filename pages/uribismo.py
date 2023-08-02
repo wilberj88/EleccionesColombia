@@ -1,13 +1,14 @@
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
+import camelot
 
 # Add a title and intro text
 st.title('Earthquake Data Explorer')
 st.text('This is a web app to allow exploration of Earthquake Data')
 
 # Create file uploader object
-upload_file = st.file_uploader('Upload a file containing earthquake data')
+upload_file = st.file_uploader('Upload a E14 or E24 or E26')
 
 # Check to see if a file has been uploaded
 if upload_file is not None:
@@ -15,7 +16,8 @@ if upload_file is not None:
 
     # Read the file to a dataframe using pandas
     df = pd.read_csv(upload_file)
-
+    tables = camelot.read_pdf(upload_file)
+    st.write(tables)
     # Create a section for the dataframe statistics
     st.header('Statistics of Dataframe')
     st.write(df.describe())
