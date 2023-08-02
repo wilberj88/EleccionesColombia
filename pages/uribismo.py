@@ -4,8 +4,8 @@ import matplotlib.pyplot as plt
 import camelot
 
 # Add a title and intro text
-st.title('Earthquake Data Explorer')
-st.text('This is a web app to allow exploration of Earthquake Data')
+st.title('Mando PreCampaña')
+st.text('Alcaldía de Bogotá: históricos, tendencias y proyecciones 2023')
 
 # Create file uploader object
 upload_file = st.file_uploader('Upload a E14 or E24 or E26')
