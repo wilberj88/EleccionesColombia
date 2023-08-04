@@ -5,11 +5,8 @@ from streamlit_echarts import st_echarts
 from streamlit_echarts import st_pyecharts
 
 # Add a title and intro text
-st.title('Mando PreCampaña')
-st.text('Alcaldía de Bogotá: históricos, tendencias y proyecciones 2023')
-
-
-st.title('Contraste Votos Zonas entre Alcalde Actual y Top 3 votos Alcaldía 2019 Vs 2015')
+st.title('Novus Vote - Mando PreCampaña')
+st.title('Votación en Bogotá por localidades para Alcaldía 2019 Vs Presidencial Uribismo 2018')
 def render_basic_radar():
     option = {
         "title": {"text": "Previo Votación 🗳️"},
