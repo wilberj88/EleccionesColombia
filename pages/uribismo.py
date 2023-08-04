@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 from streamlit_echarts import st_echarts
+from streamlit_echarts import st_pyecharts
 
 # Add a title and intro text
 st.title('Mando PreCampaña')
