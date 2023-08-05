@@ -6,7 +6,8 @@ from streamlit_echarts import st_pyecharts
 
 # Add a title and intro text
 st.title('Novus Vote 🗳️ Mando PreCampaña')
-st.title('Votación en Bogotá por localidades para Alcaldía 2019 Vs Presidencial Uribismo 2018')
+st.title('Votación histrórica en Bogotá por localidades')
+st.header('Votos Uribistas al Congreso y Presidencia 2018')
 def render_basic_radar():
     option = {
         "title": {"text": "🗳️"},
@@ -68,3 +69,6 @@ ST_RADAR_DEMOS = {
     ),
 }
 render_basic_radar()
+
+
+st.header('Votos Aspirantes Alcaldía Bog 2019')
