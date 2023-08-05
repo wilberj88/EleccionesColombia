@@ -5,19 +5,34 @@ from streamlit_echarts import st_echarts
 from streamlit_echarts import st_pyecharts
 
 # Add a title and intro text
-st.title('Novus Vote - Mando PreCampaña')
+st.title('Novus Vote 🗳️ Mando PreCampaña')
 st.title('Votación en Bogotá por localidades para Alcaldía 2019 Vs Presidencial Uribismo 2018')
 def render_basic_radar():
     option = {
-        "title": {"text": "Previo Votación 🗳️"},
-        "legend": {"data": ["Rodrigo Hernandez", "Top2.2019", "Top3.2019"]},
+        "title": {"text": "Votaciones Previas"},
+        "legend": {"data": ["CD_Cámara_2018", "CD_Senado_2018", "CD_Presi_2018_1", "CD_Presi_2018_2"]},
         "radar": {
             "indicator": [
-                {"name": "Norte", "max": 10000},
-                {"name": "Sur", "max": 10000},
-                {"name": "Oriente", "max": 10000},
-                {"name": "Occidente", "max": 10000},
-                {"name": "Centro", "max": 10000},
+                {"name": "Usaquén", "max": 142000},
+                {"name": "Chapinero", "max": 142000},
+                {"name": "SantaFé", "max": 142000},
+                {"name": "SanCristobal", "max": 142000},
+                {"name": "Usme", "max": 142000},
+                {"name": "Tunjuelito", "max": 142000},
+                {"name": "Bosa", "max": 142000},
+                {"name": "Kennedy", "max": 142000},
+                {"name": "Fontibon", "max": 142000},
+                {"name": "Engativá", "max": 142000},
+                {"name": "Suba", "max": 142000},
+                {"name": "BarriosUnidos", "max": 142000},
+                {"name": "Teusaquillo", "max": 142000},
+                {"name": "Mártires", "max": 142000},
+                {"name": "A.Nariño", "max": 142000},
+                {"name": "PuenteAranda", "max": 142000},
+                {"name": "Candelaria", "max": 142000},
+                {"name": "RafaelUribe", "max": 142000},
+                {"name": "C.Bolivar", "max": 142000},
+                {"name": "Sumapaz", "max": 142000},
             ]
         },
         "series": [
@@ -26,16 +41,20 @@ def render_basic_radar():
                 "type": "radar",
                 "data": [
                     {
-                        "value": [5500, 5789, 8450, 5500, 7500],
-                        "name": "Rodrigo Hernandez",
+                        "value": [41805, 16516, 3910, 10960, 8972, 7507, 16577, 32557, 14405, 33250, 50312, 11049, 12849, 4926, 6157, 13816, 1934, 12890, 17193, 20],
+                        "name": "CD_Cámara_2018",
                     },
                     {
-                        "value": [3500, 4500, 2500, 3500, 7000],
-                        "name": "Top2.2019",
+                        "value": [49000, 19427, 4611, 13228, 10880, 9156, 20217, 39371, 17536, 40024, 59549, 13251, 15500, 5809, 7469, 16524, 2272, 15375, 20168, 44],
+                        "name": "CD_Senado_2018",
                     },
                     {
-                        "value": [3000, 1500, 2000, 1800, 3000],
-                        "name": "Top3.2019",
+                        "value": [52074, 19291, 7167, 22504, 21263, 14697, 35214, 62239, 23970, 54691, 71106, 15821, 16495, 9196, 11073, 23476, 3367, 25318, 38290, 156],
+                        "name": "CD_Presi_2018_1",
+                    },
+                    {
+                        "value": [93918, 32843, 14102, 47474, 42737, 29908, 71009, 125169, 47346, 113650, 141800, 31327, 31295, 16813, 21321, 45782, 6591, 50580, 75825, 256],
+                        "name": "CD_Presi_2018_2",
                     },
                 ],
             }
