@@ -72,3 +72,64 @@ render_basic_radar()
 
 
 st.header('Votos Aspirantes Alcaldía Bog 2019')
+def render_basic_radar():
+    option = {
+        "title": {"text": "🗳️"},
+        "legend": {"data": ["Hollman", "Claudia", "Galán", "MiguelU"]},
+        "radar": {
+            "indicator": [
+                {"name": "Usaquén", "max": 162000},
+                {"name": "Chapinero", "max": 162000},
+                {"name": "SantaFé", "max": 162000},
+                {"name": "SanCristobal", "max": 162000},
+                {"name": "Usme", "max": 162000},
+                {"name": "Tunjuelito", "max": 162000},
+                {"name": "Bosa", "max": 162000},
+                {"name": "Kennedy", "max": 162000},
+                {"name": "Fontibon", "max": 162000},
+                {"name": "Engativá", "max": 162000},
+                {"name": "Suba", "max": 162000},
+                {"name": "BarriosUnidos", "max": 162000},
+                {"name": "Teusaquillo", "max": 162000},
+                {"name": "Mártires", "max": 162000},
+                {"name": "A.Nariño", "max": 162000},
+                {"name": "PuenteAranda", "max": 162000},
+                {"name": "Candelaria", "max": 162000},
+                {"name": "RafaelUribe", "max": 162000},
+                {"name": "C.Bolivar", "max": 162000},
+                {"name": "Sumapaz", "max": 162000},
+            ]
+        },
+        "series": [
+            {
+                "name": "Votos por Zonas",
+                "type": "radar",
+                "data": [
+                    {
+                        "value": [13733, 5632, 7843, 30724, 29256, 15229, 46944, 60245, 17245, 40323, 40932, 7684, 8877, 5944, 8912, 16105, 4106, 27113, 45461, 742],
+                        "name": "Hollman",
+                    },
+                    {
+                        "value": [75455, 29622, 16263, 52188, 36423, 29931, 77388, 143401, 60180, 136024, 156055, 30938, 40725, 14242, 21539, 47474, 8407, 49404, 66658, 951],
+                        "name": "Claudia",
+                    },
+                    {
+                        "value": [105245, 33490, 12306, 41040, 32772, 25109, 61381, 121279, 55701, 113509, 162459, 31785, 33212, 15315, 18903, 43529, 6710, 40987, 54339, 608],
+                        "name": "Galán",
+                    },
+                    {
+                        "value": [45830, 15412, 5757, 15871, 13208, 9705, 26969, 47262, 20990, 47822, 68189, 14837, 13723, 6759, 9106, 17655, 2902, 16570, 23184, 152],
+                        "name": "MiguelU",
+                    },
+                ],
+            }
+        ],
+    }
+    st_echarts(option, height="500px")
+ST_RADAR_DEMOS = {
+    "Radar: Basic Radar": (
+        render_basic_radar,
+        "https://echarts.apache.org/examples/en/editor.html?c=radar",
+    ),
+}
+render_basic_radar()
