@@ -9,7 +9,7 @@ st.title('Novus Vote 🗳️ Mando PreCampaña')
 st.title('Votación en Bogotá por localidades para Alcaldía 2019 Vs Presidencial Uribismo 2018')
 def render_basic_radar():
     option = {
-        "title": {"text": "Votaciones Previas"},
+        "title": {"text": "🗳️"},
         "legend": {"data": ["CD_Cámara_2018", "CD_Senado_2018", "CD_Presi_2018_1", "CD_Presi_2018_2"]},
         "radar": {
             "indicator": [
